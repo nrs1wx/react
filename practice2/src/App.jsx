@@ -17,7 +17,7 @@ function App() {
         github="github.com/nrs1wx"
         githubUrl="https://github.com/nrs1wx"
         instagram="@nrsl.wx"
-        instagramUrl="https://github.com/nrs1wx"
+        instagramUrl="https://instagram.com/nrsl.wx"
         address="Planet Earth"
         addressUrl="https://maps.app.goo.gl/CcyjLfHvWuqPK3hM8"
       />
