@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f3f5f8;
+  color: #1c2430;
+}
+
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+
+section {
+  background: #fff;
+  border: 1px solid #d9dee6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { margin-top: 0; font-size: 1.2rem; }
+h3 { font-size: 1rem; }
+
+button {
+  background: #2451b7;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+button:hover { background: #1b3f91; }
+button:disabled { background: #9aa5b8; cursor: not-allowed; }
+button.secondary { background: #e4e8ef; color: #1c2430; }
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border: 1px solid #d9dee6;
+  border-left-width: 6px;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.task .info { font-size: 0.9rem; color: #4a5568; }
+.task.idle { border-left-color: #9aa5b8; }
+.task.running { border-left-color: #d69e2e; }
+.task.completed { border-left-color: #2f855a; }
+.task.failed { border-left-color: #c53030; }
+
+.status { font-weight: 700; }
+.completed .status { color: #2f855a; }
+.failed .status { color: #c53030; }
+.running .status { color: #b7791f; }
+
+.message { margin: 12px 0 0; line-height: 1.5; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+li { margin-bottom: 4px; font-size: 0.9rem; }
+
+@media (max-width: 560px) { .columns { grid-template-columns: 1fr; } }
